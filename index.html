@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id= "mainDiv"></div>
+    <button onclick="valgtfrittNavn('red',50,100)">knap 1</button>
+    <button onclick="valgtfrittNavn('blue',50,200)">knap 2</button>
+
+    <script>
+        function valgtfrittNavn(color,width,height) {
+            document.getElementById("mainDiv").innerHTML = `
+             <div style= "background-color: ${color}; width:${width}%; height:${height}px;" ></div>
+             `;
+            
+        }
+    </script>
+</body>
+</html>
